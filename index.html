@@ -6,16 +6,32 @@
         button {
             background-color: blue;
             color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-buttons {
+            margin-top: 20px;
+        }
+        .social-buttons button {
+            background-color: #4267B2; /* Facebook blue */
+            margin-right: 10px;
+        }
+        .social-buttons button:last-child {
+            background-color: #DB4437; /* Google red */
         }
     </style>
 </head>
 <body>
     <h1>Привет! Я [Ваше имя]</h1>
     <p>Я изучаю Git и создаю крутые проекты.</p>
-    <button style="background-color: blue; color: white;">
-        Подписаться сейчас
-    </button>
-    <div>
+    
+    <!-- Кнопка "Подписаться сейчас" -->
+    <button>Подписаться сейчас</button>
+    
+    <!-- Форма входа через соцсети -->
+    <div class="social-buttons">
         <h2>Вход через соцсети</h2>
         <button>Facebook</button>
         <button>Google</button>
